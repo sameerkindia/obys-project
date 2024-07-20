@@ -8,7 +8,7 @@ tl.from(".line h2", {
   delay: 0.5,
 });
 
-tl.from("#line1-part1 , .line h3", {
+tl.from("#line1-part1", {
   opacity: 0,
   onStart: function () {
     let h2timer = document.querySelector("#line1-part1 h5");
@@ -25,8 +25,25 @@ tl.from("#line1-part1 , .line h3", {
   },
 });
 
+tl.to(".line h3", {
+  animationName: "animeNow",
+  opacity: 1,
+});
+
 tl.to("#loader", {
   opacity: 0,
-  duration: 0.4,
+  duration: 0.2,
   delay: 3,
+});
+
+tl.from("#page1", {
+  y: 1200,
+  opacity: 0,
+  delay: 0.2,
+  duration: 0.5,
+  // ease: power4,
+});
+
+tl.to("#loader", {
+  display: "none",
 });

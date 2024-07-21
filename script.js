@@ -50,4 +50,18 @@ function loadingAnimation() {
   });
 }
 
+function cursorAnimation() {
+  const crsr = document.getElementById("crsr");
+
+  document.addEventListener("mousemove", (position) => {
+    gsap.to(crsr, {
+      left: position.x,
+      top: position.y,
+    });
+  });
+
+  Shery.makeMagnet("#nav-part2 h4");
+}
+
 loadingAnimation();
+cursorAnimation();

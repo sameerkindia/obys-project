@@ -273,7 +273,46 @@ body {
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
 
-#page3 {
+#page4 {
   min-height: 100vh;
+  position: relative;
   width: 100%;
+  padding-top: 5vh;
+}
+
+#page4-content {
+  position: relative;
+  width: 72vw;
+  margin-left: 28%;
+  overflow: hidden;
+}
+
+#page4-content h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+#page4-content .underline {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  /* background-color: green; */
+  margin: 5vw 0px;
+}
+#page4-content > p {
+  font-size: 2.05vw;
+  width: 50%;
+  margin-bottom: 3vw;
+}
+
+#page4-flex {
+  display: flex;
+}
+
+#page4-flex img {
+  width: 48%;
+}
+#page4-flex p {
+  font-size: 0.9vw;
+  width: 19%;
+  margin-left: 1vw;
 }

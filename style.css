@@ -325,6 +325,9 @@ body {
   background-color: #3f7df4;
   width: 33vw;
   padding: 3vw;
+  position: relative;
+  margin-top: -35vh;
+  margin-left: 26vw;
 }
 
 .blue-div-elem {

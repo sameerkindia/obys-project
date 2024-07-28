@@ -358,5 +358,59 @@ body {
 #page5 {
   min-height: 100vh;
   width: 100%;
+  position: relative;
   /* padding: 5vw 0; */
+}
+
+.elem,
+.elem2 {
+  /* background-color: red; */
+  white-space: nowrap;
+  margin-bottom: -2vw;
+}
+
+.elem h2 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: marque;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.elem span,
+.elem2 span {
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+
+@keyframes marque {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.elem2 h2 {
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  font-weight: 400;
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  transform: translateX(calc(-100% - 20px));
+  animation-name: marque;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
 }

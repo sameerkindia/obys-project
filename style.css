@@ -296,6 +296,7 @@ body {
   text-transform: uppercase;
 }
 #page4-content .underline {
+  /* .underline { */
   height: 1px;
   width: 100%;
   background-color: white;

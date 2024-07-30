@@ -118,7 +118,7 @@ body {
 }
 
 #page1 {
-  height: 100vh;
+  height: 78vh;
   width: 100%;
   /* background-color: #151515; */
 }
@@ -154,6 +154,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 1001;
+  overflow-x: visible;
 }
 
 .hero:nth-child(2) {
@@ -166,6 +167,21 @@ body {
   text-transform: uppercase;
   line-height: 7.2vw;
 }
+
+#hero1 {
+  position: relative;
+}
+
+#hero1::before {
+  content: "01";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -18%;
+  top: 29%;
+}
+
 .hero h2,
 .hero h3 {
   font-size: 7.2vw;
@@ -294,6 +310,17 @@ body {
 #page4-content h2 {
   font-size: 7vw;
   text-transform: uppercase;
+  position: relative;
+}
+
+#page4-content h2::before {
+  content: "03";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -12%;
+  top: 8%;
 }
 #page4-content .underline {
   /* .underline { */
@@ -350,7 +377,7 @@ body {
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
 /* /////////////////                /////////////////// */
-/*                      PAGE 4                          */
+/*                      PAGE 5                          */
 /* ////////////////                 /////////////////// */
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
@@ -414,4 +441,74 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: reverse;
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* /////////////////                /////////////////// */
+/*                      PAGE 5                          */
+/* ////////////////                 /////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////// */
+
+#footer {
+  min-height: 85vh;
+  width: 100%;
+  position: relative;
+  /* width: 60vw; */
+  padding-left: 28vw;
+  padding-right: 2vw;
+}
+
+#footer h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+}
+#footer h2::before {
+  content: "04";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -12%;
+  top: 8%;
+}
+
+#footer .underline {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+
+#footer-div {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15vw;
+  padding-top: 4vw;
+  margin-bottom: 3vw;
+}
+
+#footer-div .box {
+  width: 20%;
+}
+
+#footer h6 {
+  font-size: 0.9vw;
+  margin-bottom: 1.5vw;
+  font-weight: 600;
+}
+#footer h5 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  text-transform: capitalize;
+  /* margin: 0.1vh 0; */
+}
+
+#footer > h5 {
+  font-weight: 500;
+  font-size: 0.8vw;
 }

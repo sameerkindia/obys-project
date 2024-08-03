@@ -111,3 +111,7 @@ function cursorAnimation() {
 locomotiveScrolltrigger();
 loadingAnimation();
 // cursorAnimation();
+
+let i = 5;
+
+// Just to show

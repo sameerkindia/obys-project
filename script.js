@@ -90,7 +90,9 @@ function loadingAnimation() {
   });
 
   tl.from(".hero-heading", {
-    y: 150,
+    // y: 150,
+    y: 350,
+
     stagger: 0.2,
   });
 
@@ -118,4 +120,6 @@ function cursorAnimation() {
 
 locomotiveScrolltrigger();
 loadingAnimation();
-cursorAnimation();
+// cursorAnimation();
+
+function sheryAnimation() {}

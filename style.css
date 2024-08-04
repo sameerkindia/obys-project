@@ -121,6 +121,7 @@ body {
 #page1 {
   min-height: 78vh;
   width: 100%;
+  /* background-color: red; */
   /* background-color: #151515; */
 }
 
@@ -131,6 +132,11 @@ body {
   padding: 2.3vw 5.5vw;
   position: relative;
   z-index: 1001;
+}
+
+#nav-logo {
+  height: 3.73vw;
+  width: 3.73vw;
 }
 
 #nav-part2 {
@@ -159,7 +165,7 @@ body {
 }
 
 .hero:nth-child(2) {
-  margin-top: 18vh;
+  margin-top: 12vh;
 }
 
 .hero h1 {

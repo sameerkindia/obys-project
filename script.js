@@ -93,6 +93,14 @@ function loadingAnimation() {
     y: 150,
     stagger: 0.2,
   });
+
+  tl.from(
+    "#hero1 , #page2",
+    {
+      opacity: 0,
+    },
+    "-=1.2"
+  );
 }
 
 function cursorAnimation() {
@@ -110,8 +118,4 @@ function cursorAnimation() {
 
 locomotiveScrolltrigger();
 loadingAnimation();
-// cursorAnimation();
-
-let i = 5;
-
-// Just to show
+cursorAnimation();

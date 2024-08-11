@@ -323,26 +323,95 @@ body {
 #image-div-container {
   padding: 1vw;
   position: relative;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  /* align-items: center; */
+  /* justify-content: space-around; */
   flex-wrap: wrap;
-  gap: 2vw;
+  /* gap: 2vw; */
 }
 
 .image-div {
-  height: 33vw;
-  width: 23vw;
-  background-color: #3f7df4;
+  height: 38vw;
+  width: 25vw;
+  /* background-color: #3f7df4; */
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  margin: 2vw;
+}
+.image-div:nth-child(1) {
+  height: 30vw;
+  width: 22vw;
+  object-fit: cover;
+  object-position: center;
 }
 
 .image-div img {
   height: 100%;
   width: 100%;
+}
+
+.page3-circle1 {
+  height: 23vw;
+  width: 23vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3vw;
+  /* margin-left: auto; */
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.page3-circle1 svg {
+  height: 30%;
+}
+
+.page3-circle2 {
+  height: 23vw;
+  width: 23vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page3-circle2 svg {
+  height: 30%;
+  rotate: -45deg;
+}
+
+.circle-in {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  transform: scale(0);
+}
+
+.circle-in p {
+  color: black;
+  font-size: 0.8vw;
+}
+
+.circle-in:hover {
+  transform: scale(2);
+  background-color: red;
 }
 
 /* //////////////////////////////////////////////////// */

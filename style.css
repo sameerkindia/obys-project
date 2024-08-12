@@ -402,16 +402,18 @@ body {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   transform: scale(0);
+  border-radius: 50%;
 }
 
 .circle-in p {
   color: black;
   font-size: 0.8vw;
+  width: 15vw;
+  text-align: center;
 }
 
-.circle-in:hover {
-  transform: scale(2);
-  background-color: red;
+.page-circle:hover .circle-in {
+  transform: scale(1.1);
 }
 
 /* //////////////////////////////////////////////////// */

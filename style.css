@@ -18,6 +18,7 @@ body {
 }
 
 /* #0b0b0b */
+/* just show up thing */
 
 #crsr {
   height: 2vw;
@@ -289,14 +290,17 @@ body {
   width: 100%;
   background-color: #030303;
   margin-bottom: 20vw;
+  margin-top: 20vw;
   padding: 17vh 2vw;
+  padding-top: 2vw;
 }
 
 #page3 h2 {
   font-size: 7vw;
   text-transform: uppercase;
   position: relative;
-  padding: 17vh 0;
+  /* padding: 17vh 0; */
+  padding-top: 2vw;
   margin-left: 28vw;
 }
 
@@ -365,6 +369,7 @@ body {
   margin-top: auto;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .page3-circle1 svg {
@@ -381,6 +386,7 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .page3-circle2 svg {
@@ -400,7 +406,6 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
   transform: scale(0);
   border-radius: 50%;
 }
@@ -431,6 +436,8 @@ body {
   position: relative;
   width: 100%;
   padding: 7vh 0;
+  margin-top: 35vw;
+  margin-bottom: 15vw;
 }
 
 #page4-content {

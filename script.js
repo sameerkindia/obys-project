@@ -105,22 +105,80 @@ function loadingAnimation() {
   );
 }
 
-function cursorAnimation() {
-  const crsr = document.getElementById("crsr");
+function cursurAnimation() {
+  // const crsr = document.getElementById("crsr");
 
-  document.addEventListener("mousemove", (position) => {
-    gsap.to(crsr, {
-      left: position.x,
-      top: position.y,
-    });
+  // document.addEventListener("mousemove", (position) => {
+  //   gsap.to(crsr, {
+  //     left: position.x,
+  //     top: position.y,
+  //   });
+  // });
+
+  Shery.mouseFollower({
+    skew: true,
+    ease: "ease-in",
+    duration: 1,
   });
 
   Shery.makeMagnet("#nav-part2 h4");
-}
 
-locomotiveScrolltrigger();
-loadingAnimation();
-// cursorAnimation();
+  const videoContainer = document.querySelector("#video-container");
+  const video = document.querySelector("#video-container video");
+
+  videoContainer.addEventListener("mouseenter", () => {
+    videoContainer.addEventListener("mousemove", (pos) => {
+      gsap.to(".mousefollower", {
+        opacity: 0,
+      });
+      gsap.to("#video-cursur", {
+        left: pos.x - 500,
+        y: pos.y - 110,
+      });
+    });
+  });
+  videoContainer.addEventListener("mouseleave", () => {
+    gsap.to(".mousefollower", {
+      opacity: 1,
+    });
+    gsap.to("#video-cursur", {
+      top: "-15%",
+      left: "70%",
+    });
+  });
+
+  let isPlay = false;
+
+  videoContainer.addEventListener("click", () => {
+    if (!isPlay) {
+      video.play();
+      video.style.opacity = "1";
+
+      document.querySelector(
+        "#video-cursur"
+      ).innnerHtml = `<i class="fa-solid fa-pause"></i>`;
+
+      gsap.to("#video-cursur", {
+        scale: 0.5,
+      });
+
+      isPlay = true;
+    } else {
+      video.pause();
+      video.style.opacity = "0";
+
+      document.querySelector(
+        "#video-cursur"
+      ).innnerHtml = `<i class="fa-solid fa-play"></i>`;
+
+      gsap.to("#video-cursur", {
+        scale: 1,
+      });
+
+      isPlay = false;
+    }
+  });
+}
 
 function sheryAnimation() {
   Shery.imageEffect(".image-div", {
@@ -159,5 +217,9 @@ function sheryAnimation() {
     gooey: true,
   });
 }
+
+locomotiveScrolltrigger();
+loadingAnimation();
+cursurAnimation();
 
 sheryAnimation();

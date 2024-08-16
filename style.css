@@ -670,3 +670,20 @@ body {
   z-index: 9999 !important;
   pointer-events: none;
 }
+
+#flag {
+  height: 25vw;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+#hero1,
+#hero2,
+#hero3,
+#hero4 {
+  position: relative;
+  z-index: 2;
+}

@@ -221,5 +221,23 @@ function sheryAnimation() {
 locomotiveScrolltrigger();
 loadingAnimation();
 cursurAnimation();
-
 sheryAnimation();
+
+document.addEventListener("mousemove", (pos) => {
+  gsap.to("#flag", {
+    x: pos.x,
+    y: pos.y,
+  });
+});
+
+document.querySelector("#hero3").addEventListener("mouseenter", () => {
+  gsap.to("#flag", {
+    opacity: 1,
+  });
+});
+
+document.querySelector("#hero3").addEventListener("mouseleave", () => {
+  gsap.to("#flag", {
+    opacity: 0,
+  });
+});

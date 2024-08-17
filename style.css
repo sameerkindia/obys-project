@@ -42,7 +42,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 999;
-  background-color: #030303;
+  /* background-color: #030303; */
   padding: 25vh 10vw;
 }
 
@@ -235,7 +235,7 @@ body {
 #page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: #030303;
+  /* background-color: #030303; */
   margin-bottom: 20vw;
   margin-top: 20vw;
   padding: 17vh 2vw;
@@ -810,5 +810,287 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////// */
+  /* /////////////////                /////////////////// */
+  /*                      PAGE 3                          */
+  /* ////////////////                 /////////////////// */
+  /* //////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////// */
+  /* //////////////////////////////////////////////////// */
+
+  #page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #030303;
+    margin-bottom: 20vw;
+    margin-top: 5vw;
+    padding: 17vh 2vw;
+    padding-top: 2vw;
+  }
+
+  #page3 h2 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    position: relative;
+    /* padding: 17vh 0; */
+    padding-top: 5vw;
+    margin-left: 5vw;
+  }
+
+  #page3 h2::before {
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 5vw;
+    /* top: 8%; */
+    top: -50%;
+  }
+  #page3 .underline {
+    /* .underline { */
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    /* background-color: green; */
+    margin: 2vw 0px;
+    margin-left: 5vw;
+  }
+
+  #image-div-container {
+    padding: 1vw;
+    position: relative;
+    /* background-color: greenyellow; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    /* gap: 2vw; */
+  }
+
+  .image-div {
+    height: 38vw;
+    width: 25vw;
+    /* background-color: #3f7df4; */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw;
+  }
+  .image-div:nth-child(1) {
+    height: 30vw;
+    width: 22vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .image-div img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .page3-circle1 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+    /* margin-left: auto; */
+    margin-top: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .page3-circle1 svg {
+    height: 30%;
+  }
+
+  .page3-circle2 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .page3-circle2 svg {
+    height: 30%;
+    rotate: -45deg;
+  }
+
+  .circle-in {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    border-radius: 50%;
+  }
+
+  .circle-in p {
+    color: black;
+    font-size: 0.8vw;
+    width: 15vw;
+    text-align: center;
+  }
+
+  .page-circle:hover .circle-in {
+    transform: scale(1.1);
+  }
+
+  #page3 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #030303; */
+    margin-bottom: 20vw;
+    margin-top: 20vw;
+    padding: 17vh 2vw;
+    padding-top: 2vw;
+  }
+
+  #page3 h2 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    /* padding: 17vh 0; */
+    padding-top: 2vw;
+    margin-left: 28vw;
+  }
+
+  #page3 h2::before {
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    /* top: 8%; */
+    top: 28%;
+  }
+  #page3 .underline {
+    /* .underline { */
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    /* background-color: green; */
+    margin: 1vw 0px;
+    margin-left: 28vw;
+  }
+
+  #image-div-container {
+    padding: 1vw;
+    position: relative;
+    /* background-color: greenyellow; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    /* gap: 2vw; */
+  }
+
+  .image-div {
+    height: 38vw;
+    width: 25vw;
+    /* background-color: #3f7df4; */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw;
+  }
+  .image-div:nth-child(1) {
+    height: 30vw;
+    width: 22vw;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .image-div img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .page3-circle1 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+    /* margin-left: auto; */
+    margin-top: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .page3-circle1 svg {
+    height: 30%;
+  }
+
+  .page3-circle2 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .page3-circle2 svg {
+    height: 30%;
+    rotate: -45deg;
+  }
+
+  .circle-in {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    border-radius: 50%;
+  }
+
+  .circle-in p {
+    color: black;
+    font-size: 0.8vw;
+    width: 15vw;
+    text-align: center;
+  }
+
+  .page-circle:hover .circle-in {
+    transform: scale(1.1);
   }
 }

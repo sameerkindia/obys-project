@@ -600,7 +600,7 @@ body {
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
 /* /////////////////                /////////////////// */
-/*                      PAGE 5                          */
+/*                      Footer                          */
 /* ////////////////                 /////////////////// */
 /* //////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////// */
@@ -700,13 +700,9 @@ body {
 
 @media (max-width: 600px) {
   /* //////////////////////////////////////////////////// */
-  /* //////////////////////////////////////////////////// */
-  /* //////////////////////////////////////////////////// */
   /* /////////////////                /////////////////// */
   /*                      PAGE 1                          */
   /* ////////////////                 /////////////////// */
-  /* //////////////////////////////////////////////////// */
-  /* //////////////////////////////////////////////////// */
   /* //////////////////////////////////////////////////// */
 
   #page1 {
@@ -933,14 +929,14 @@ body {
     /* background-color: greenyellow; */
     display: flex;
     /* align-items: center; */
-    /* justify-content: space-around; */
+    justify-content: space-around !important;
     flex-wrap: wrap;
     /* gap: 2vw; */
   }
 
   .image-div {
-    height: 38vw;
-    width: 25vw;
+    height: 90% !important;
+    width: 64vw !important;
     /* background-color: #3f7df4; */
     position: relative;
     overflow: hidden;
@@ -948,8 +944,8 @@ body {
     margin: 2vw;
   }
   .image-div:nth-child(1) {
-    height: 30vw;
-    width: 22vw;
+    height: 90% !important;
+    width: 64vw !important;
     object-fit: cover;
     object-position: center;
   }
@@ -973,6 +969,8 @@ body {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    display: none !important;
   }
 
   .page3-circle1 svg {
@@ -990,6 +988,8 @@ body {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    display: none !important;
   }
 
   .page3-circle2 svg {
@@ -1011,6 +1011,8 @@ body {
     transition: all 0.5s ease-in-out;
     transform: scale(0);
     border-radius: 50%;
+
+    display: none !important;
   }
 
   .circle-in p {
@@ -1022,6 +1024,8 @@ body {
 
   .page-circle:hover .circle-in {
     transform: scale(1.1);
+
+    display: none !important;
   }
 
   #page3 {
@@ -1029,29 +1033,30 @@ body {
     width: 100%;
     /* background-color: #030303; */
     margin-bottom: 20vw;
-    margin-top: 20vw;
+    margin-top: 0vw !important;
     padding: 17vh 2vw;
-    padding-top: 2vw;
+    padding-top: 5vw !important;
   }
 
   #page3 h2 {
-    font-size: 7vw;
+    font-size: 9vw !important;
     text-transform: uppercase;
     position: relative;
     /* padding: 17vh 0; */
     padding-top: 2vw;
-    margin-left: 28vw;
+    margin-top: 3vw;
+    margin-left: 3vw !important;
   }
 
   #page3 h2::before {
     content: "02";
     position: absolute;
-    font-size: 3vw;
-    font-weight: 100;
+    font-size: 5vw;
+    font-weight: 300;
     font-family: "silk serif";
-    left: -12%;
+    left: 0%;
     /* top: 8%; */
-    top: 28%;
+    top: -21%;
   }
   #page3 .underline {
     /* .underline { */

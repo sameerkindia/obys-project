@@ -718,16 +718,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 4.3vw 5vw;
-    position: fixed;
+    padding: 3vw;
+    position: absolute;
     width: 100%;
     top: 0;
-    z-index: 1001;
+    z-index: 1999;
   }
 
   #nav-logo {
     height: 7.73vw;
     width: 18.73vw;
+    margin-right: auto;
     /* scale: 2; */
   }
 
@@ -1061,7 +1062,7 @@ body {
     background-color: white;
     /* background-color: green; */
     margin: 1vw 0px;
-    margin-left: 28vw;
+    margin-left: 3vw;
   }
 
   #image-div-container {
@@ -1168,13 +1169,14 @@ body {
     width: 100%;
     padding: 7vh 0;
     margin-top: 0vw;
-    margin-bottom: 15vw;
+    margin-bottom: 5vw;
   }
 
   #page4-content {
     position: relative;
     width: 100%;
-    margin-left: 3vw;
+    margin-left: 0vw;
+    padding-left: 3vw;
     overflow: hidden;
   }
 
@@ -1249,5 +1251,108 @@ body {
   .blue-div-elem p {
     width: 55%;
     font-size: 2.5vw;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* /////////////////                /////////////////// */
+  /*                      PAGE 5                          */
+  /* ////////////////                 /////////////////// */
+  /* //////////////////////////////////////////////////// */
+
+  #page5 {
+    min-height: 75vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    /* padding: 5vw 0; */
+  }
+
+  .elem h2 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 0px;
+  }
+
+  .elem2 h2 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 0px;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* /////////////////                /////////////////// */
+  /*                      Footer                          */
+  /* ////////////////                 /////////////////// */
+  /* //////////////////////////////////////////////////// */
+
+  #footer {
+    min-height: 85vh;
+    width: 100%;
+    position: relative;
+    /* width: 60vw; */
+    padding-left: 3vw;
+    padding-right: 2vw;
+  }
+
+  #footer h2 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+  }
+  #footer h2::before {
+    content: "04";
+    position: absolute;
+    font-size: 4vw;
+    font-weight: 300;
+    font-family: "silk serif";
+    left: 0;
+    top: -60%;
+  }
+
+  #footer .underline {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+  }
+
+  #footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 3vw;
+    gap: 4vw;
+  }
+
+  #footer-div .box {
+    width: 20%;
+  }
+
+  #footer h6 {
+    font-size: 5vw;
+    margin-bottom: 1.5vw;
+    font-weight: 600;
+  }
+  #footer h5 {
+    font-size: 3.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* margin: 0.1vh 0; */
+  }
+
+  #footer > h5 {
+    font-weight: 500;
+    font-size: 2.5vw;
+    padding-bottom: 1vw;
   }
 }
